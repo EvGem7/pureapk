@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-./adb install build/pure.apk
+adb install build/pure.apk
 

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-./adb uninstall pure.apk
+adb uninstall pure.apk
 
