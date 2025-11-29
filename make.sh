@@ -29,7 +29,7 @@ echo "> Compiling MainActivity.java"
 javac -cp android.jar -d $BUILD_DIR MainActivity.java
 
 echo "> Compiling MainActivity.class to classes.dex"
-java -cp r8.jar com.android.tools.r8.D8 --output $BUILD_DIR $(find $BUILD_DIR -name "*.class")
+java -cp r8.jar com.android.tools.r8.D8 --output $BUILD_DIR $BUILD_DIR/*/*.class
 
 echo "> Packing classes.dex to $APK_NAME"
 pushd $BUILD_DIR
